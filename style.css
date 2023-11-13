@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  border: 1px solid #000;
+  width: 50%;
+  position: relative;
+  background: url("../../images/wood-2.jpg");
+  background-size: cover;
+  margin: 50px auto;
+}
+
+.container {
+  width: 500px;
+  height: 250px;
+  margin: 30px auto;
+  border: 1px solid #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.container .slider {
+  width: 2500px;
+  height: 250px;
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+.container .slider .box {
+  float: left;
+  width: 500px;
+  height: 100%;
+}
+
+.container .slider .box:first-child {
+  background: red;
+}
+.container .slider .box:nth-child(2) {
+  background: green;
+}
+.container .slider .box:nth-child(3) {
+  background: blue;
+}
+.container .slider .box:nth-child(4) {
+  background: black;
+}
+.container .slider .box:last-child {
+  background: yellow;
+}
+
+.main .nav {
+  position: absolute;
+  top: 40%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 45px;
+  color: #fff;
+  background: rgba(36, 33, 32, 0.4);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.main:hover .nav {
+  opacity: 1;
+}
+
+.main .nav:hover {
+  background: rgba(10, 10, 10, 0.6);
+  color: orangered;
+}
+
+.next {
+  right: 0;
+}
+.previous {
+  left: 0;
+}
